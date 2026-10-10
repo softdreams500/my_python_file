@@ -1,6 +1,6 @@
 gradebook = {}
 while True:
-    choice = input("choose:add / view / exist: ")
+    choice = input("choose:add / view / exit: ")
     if choice == "add":
         name = input("enter name: ")
         grade = input("enter grade: ")
@@ -12,7 +12,7 @@ while True:
             print(f"{name} grade is {gradebook[name]}")
         else:
             print("Student not found!")
-    elif choice == "exist":
+    elif choice in ("exit", "exist"):
         break
     else:
         print("please enter a valid choice")
